@@ -1,0 +1,6 @@
+1. Read the csv file
+2. Ask a state to the user
+3. Check this state against the csv file state column
+4. Get the coordinates of the state from the csv file
+5. Create a turtle with the user state
+6. Move this turtle to the coordinates
