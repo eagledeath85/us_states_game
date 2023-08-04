@@ -19,7 +19,7 @@ for state in states:
     if answer_state.casefold() == state.casefold():
         # TODO: Find how to retrieve coordinates(x, y) with pandas
         coordinates = data[state(data.x, data.y)]
-        print()
+        print(coordinates)
 
 
 
