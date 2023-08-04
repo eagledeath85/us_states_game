@@ -13,10 +13,13 @@ screen.addshape(us_map_image)
 turtle.shape(us_map_image)
 
 data = pandas.read_csv("50_states.csv")
-print(type(data.state))
+states = data.state
 answer_state = screen.textinput(title="Guess the State", prompt="Give another state's name")
-for state in data.state:
-    pass
+for state in states:
+    if answer_state.casefold() == state.casefold():
+        # TODO: Find how to retrieve coordinates(x, y) with pandas
+        coordinates = data[state(data.x, data.y)]
+        print()
 
 
 
