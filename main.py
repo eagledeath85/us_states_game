@@ -15,7 +15,8 @@ turtle.shape(us_map_image)
 data = pandas.read_csv("50_states.csv")
 print(type(data.state))
 answer_state = screen.textinput(title="Guess the State", prompt="Give another state's name")
-
+for state in data.state:
+    pass
 
 
 
